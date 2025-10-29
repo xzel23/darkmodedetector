@@ -1,5 +1,7 @@
 package darkmodedetector;
 
+import darkmodedetector.imp.DarkModeDetectorInstance;
+
 import java.util.function.Consumer;
 
 /**
@@ -9,6 +11,10 @@ import java.util.function.Consumer;
  * as well as to register and unregister listeners for dark mode state changes.
  */
 public interface DarkModeDetector {
+    static DarkModeDetector getInstance() {
+        return DarkModeDetectorInstance.get();
+    }
+
     /**
      * Checks if dark mode detection is supported on the current platform.
      *

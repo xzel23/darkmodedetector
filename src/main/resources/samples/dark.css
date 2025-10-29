@@ -1,0 +1,6 @@
+.root {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #E6E6E6;
+}
+.label { -fx-text-fill: #E6E6E6; }
+.radio-button .text { -fx-fill: #E6E6E6; }
